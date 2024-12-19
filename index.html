@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天気アプリ</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>☀️ リアルタイム天気アプリ</h1>
+      <div class="search-container">
+        <input id="cityInput" type="text" placeholder="都市名を入力" />
+        <button id="searchButton">検索</button>
+      </div>
+      <div id="weatherResult"></div>
+      <ul id="weatherList" class="weather-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

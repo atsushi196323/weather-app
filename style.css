@@ -1,0 +1,95 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #87cefa, #f0f8ff);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 入力とボタン */
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #87cefa;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #2c3e50;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2c3e50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1abc9c;
+}
+
+/* 天気結果 */
+#weatherResult {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 天気リスト */
+.weather-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.weather-list li {
+  background: #f7f7f7;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.weather-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
